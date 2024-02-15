@@ -1,4 +1,22 @@
 {
+  "api": {
+    "amplfyreactgraphql": {
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [],
+          "defaultAuthentication": {
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            },
+            "authenticationType": "API_KEY"
+          }
+        }
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync"
+    }
+  },
   "auth": {
     "amplfyreactgraphql87434d77": {
       "customAuth": false,
@@ -23,6 +41,13 @@
       },
       "providerPlugin": "awscloudformation",
       "service": "Cognito"
+    }
+  },
+  "storage": {
+    "s3c86bd065": {
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "S3"
     }
   }
 }
